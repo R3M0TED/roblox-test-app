@@ -17,7 +17,7 @@ Read these first: `README.md`, `TASKS.md`, `docs/design.md`, `docs/contracts.md`
 - `src/shared/` → `ReplicatedStorage.Shared` (shared modules, config, remotes setup)
 - `src/client/` **except** `src/client/ui/` (client gameplay such as input, camera, and effects)
 
-Don't edit `src/client/ui/` (UI Designer) or `src/server/World/` (Builder). Your `init.server.luau` may `require` the Builder's world module to build the map at startup. Gameplay finds interactive objects through the CollectionService tags and attributes in `docs/contracts.md`.
+Don't edit `src/client/ui/` (UI Designer) or `src/server/World/` (Builder). The map is baked into the place in Edit mode, so don't build it at startup. Gameplay finds interactive objects through the CollectionService tags and attributes in `docs/contracts.md`.
 
 ## Standards
 

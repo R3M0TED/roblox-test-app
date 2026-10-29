@@ -9,6 +9,10 @@
 
 All agents work in the same folder on the `main` branch. File ownership is what prevents collisions, so **only edit and commit files you own**. Commit with `git add <your files>`, never `git add -A`. Pull/push to GitHub only if the user asks.
 
+## Roblox Studio (MCP)
+
+Every agent can reach the open Studio session through the `Roblox_Studio` MCP server (`.mcp.json`). Read-only tools are fine for anyone. These include `search_game_tree`, `inspect_instance`, `get_console_output`, and `screen_capture`. **Only the Builder edits `Workspace` and `Lighting` through MCP.** Never use MCP to edit scripts. Scripts live in `src/` and are synced by Rojo, so editing them in Studio would just be overwritten. Only one agent should run a playtest (`start_stop_play`) at a time. Coordinate through the PM.
+
 ## Communication
 
 There are two channels:
